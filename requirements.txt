@@ -2,9 +2,11 @@ numpy
 scipy
 pandas
 matplotlib
-tqdm
 obspy
+tensorflow
+keras
+tqdm
 darts
 torch
 scikit-learn
-tensorflow
+
