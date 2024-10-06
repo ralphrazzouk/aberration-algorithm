@@ -12,6 +12,18 @@ in your command prompt.
 
 Clone the repository and feel free play around with the notebooks.
 
+We are using
+- Python version 3.12.6,
+- Tensorflow version 2.17.
+
+We also attempted to do GPU training. In that case, we used
+- Python version 3.10.11,
+- Tensorflow version 2.10,
+- CUDA Toolkit version 11.2,
+- CUDNN version 8.1.
+
+
+
 ## Data
 ### Format
 The data was provided by the [Space Apps 2024 Seismic Detection Data Packet](https://wufs.wustl.edu/SpaceApps/data/space_apps_2024_seismic_detection.zip).
