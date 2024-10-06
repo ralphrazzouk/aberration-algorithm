@@ -58,6 +58,11 @@ If you head over to https://aberration.dev/ and select `Detect Quake` from the n
 It may take some time to process as this is all done on an online server. If you get the same data set and prediction in the image above, then the server must have timed out (since it costs to run it indefinitely) and instead outputs a template image (the one seen above). 
 
 ## Predictions
+### Output Files
+All the output files are in the `./predictions` folder. They subfolders contain the individual data of each file specifically. From those, we run the `generate_catalogs.ipynb` notebook to generate the final .csv output file that contains the location of the predicted arrival time in each file, with its corresponding `filename`, `time_abs` amd `time_rel` columns.
+![predictions](./assets/predictions.png)
+
+### Model Used
 The model we used to generate our final predictions for this challenge is `./trained_models/lunar/cnn_sigmoid_moon_processed__events3_windowsize64_batchsize500_smoothing0.05_epochs10.keras`.  Additionally, for Mars data, we took that model and trained it on the Mars training sets, and the model is `./trained_models/trained_on_both.keras`.
 
 This is how our model performed during training:
